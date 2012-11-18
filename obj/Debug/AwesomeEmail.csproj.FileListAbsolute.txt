@@ -1,0 +1,27 @@
+C:\Email program\Final\EmailClient\EmailClient\bin\Debug\EmailClient.exe.config
+C:\Email program\Final\EmailClient\EmailClient\obj\Debug\EmailClient.exe
+C:\Email program\Final\EmailClient\EmailClient\obj\Debug\EmailClient.pdb
+C:\Email program\Final\EmailClient\EmailClient\bin\Debug\EmailClient.exe
+C:\Email program\Final\EmailClient\EmailClient\bin\Debug\EmailClient.pdb
+C:\Email program\Final\EmailClient\EmailClient\obj\Debug\AwesomeEmail.Client.resources
+C:\Email program\Final\EmailClient\EmailClient\obj\Debug\AwesomeEmail.Login.resources
+C:\Email program\Final\EmailClient\EmailClient\obj\Debug\AwesomeEmail.Properties.Resources.resources
+C:\Email program\Final\EmailClient\EmailClient\obj\Debug\AwesomeEmail.csproj.GenerateResource.Cache
+C:\Email program\Final\Awesome Email\EmailClient\bin\Debug\Awesome Email.exe.config
+C:\Email program\Final\Awesome Email\EmailClient\bin\Debug\Awesome Email.exe
+C:\Email program\Final\Awesome Email\EmailClient\bin\Debug\Awesome Email.pdb
+C:\Email program\Final\Awesome Email\EmailClient\obj\Debug\AwesomeEmail.Client.resources
+C:\Email program\Final\Awesome Email\EmailClient\obj\Debug\AwesomeEmail.Login.resources
+C:\Email program\Final\Awesome Email\EmailClient\obj\Debug\AwesomeEmail.Properties.Resources.resources
+C:\Email program\Final\Awesome Email\EmailClient\obj\Debug\AwesomeEmail.csproj.GenerateResource.Cache
+C:\Email program\Final\Awesome Email\EmailClient\obj\Debug\Awesome Email.exe
+C:\Email program\Final\Awesome Email\EmailClient\obj\Debug\Awesome Email.pdb
+C:\Email program\Final\Awesome Email\Awesome Email\bin\Debug\Awesome Email.exe.config
+C:\Email program\Final\Awesome Email\Awesome Email\bin\Debug\Awesome Email.exe
+C:\Email program\Final\Awesome Email\Awesome Email\bin\Debug\Awesome Email.pdb
+C:\Email program\Final\Awesome Email\Awesome Email\obj\Debug\AwesomeEmail.Client.resources
+C:\Email program\Final\Awesome Email\Awesome Email\obj\Debug\AwesomeEmail.Login.resources
+C:\Email program\Final\Awesome Email\Awesome Email\obj\Debug\AwesomeEmail.Properties.Resources.resources
+C:\Email program\Final\Awesome Email\Awesome Email\obj\Debug\AwesomeEmail.csproj.GenerateResource.Cache
+C:\Email program\Final\Awesome Email\Awesome Email\obj\Debug\Awesome Email.exe
+C:\Email program\Final\Awesome Email\Awesome Email\obj\Debug\Awesome Email.pdb

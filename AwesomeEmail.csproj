@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5C4593C9-56D9-49CA-9DAD-1490573F2983}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AwesomeEmail</RootNamespace>
+    <AssemblyName>Awesome Email</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client.Designer.cs">
+      <DependentUpon>Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Logging\DefaultLogger.cs" />
+    <Compile Include="Common\Logging\DiagnosticsLogger.cs" />
+    <Compile Include="Common\Logging\FileLogger.cs" />
+    <Compile Include="Common\Logging\ILog.cs" />
+    <Compile Include="Common\StreamUtility.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mime\Decode\Base64.cs" />
+    <Compile Include="Mime\Decode\EncodedWord.cs" />
+    <Compile Include="Mime\Decode\EncodingFinder.cs" />
+    <Compile Include="Mime\Decode\QuotedPrintable.cs" />
+    <Compile Include="Mime\Decode\Rfc2231Decoder.cs" />
+    <Compile Include="Mime\Decode\Rfc2822DateTime.cs" />
+    <Compile Include="Mime\Decode\Utility.cs" />
+    <Compile Include="Mime\Header\ContentTransferEncoding.cs" />
+    <Compile Include="Mime\Header\HeaderExtractor.cs" />
+    <Compile Include="Mime\Header\HeaderFieldParser.cs" />
+    <Compile Include="Mime\Header\MessageHeader.cs" />
+    <Compile Include="Mime\Header\Received.cs" />
+    <Compile Include="Mime\Header\RfcMailAddress.cs" />
+    <Compile Include="Mime\Message.cs" />
+    <Compile Include="Mime\MessagePart.cs" />
+    <Compile Include="Mime\Traverse\AnswerMessageTraverser.cs" />
+    <Compile Include="Mime\Traverse\AttachmentFinder.cs" />
+    <Compile Include="Mime\Traverse\FindAllMessagePartsWithMediaType.cs" />
+    <Compile Include="Mime\Traverse\FindFirstMessagePartWithMediaType.cs" />
+    <Compile Include="Mime\Traverse\IAnswerMessageTraverser.cs" />
+    <Compile Include="Mime\Traverse\IQuestionAnswerMessageTraverser.cs" />
+    <Compile Include="Mime\Traverse\MultipleMessagePartFinder.cs" />
+    <Compile Include="Mime\Traverse\TextVersionFinder.cs" />
+    <Compile Include="Pop3\Apop.cs" />
+    <Compile Include="Pop3\AuthenticationMethod.cs" />
+    <Compile Include="Pop3\ConnectionState.cs" />
+    <Compile Include="Pop3\CramMd5.cs" />
+    <Compile Include="Pop3\Disposable.cs" />
+    <Compile Include="Pop3\Exceptions\InvalidLoginException.cs" />
+    <Compile Include="Pop3\Exceptions\InvalidUseException.cs" />
+    <Compile Include="Pop3\Exceptions\LoginDelayException.cs" />
+    <Compile Include="Pop3\Exceptions\PopClientException.cs" />
+    <Compile Include="Pop3\Exceptions\PopServerException.cs" />
+    <Compile Include="Pop3\Exceptions\PopServerLockedException.cs" />
+    <Compile Include="Pop3\Exceptions\PopServerNotAvailableException.cs" />
+    <Compile Include="Pop3\Exceptions\PopServerNotFoundException.cs" />
+    <Compile Include="Pop3\Pop3Client.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="TreeNodeBuilder.cs" />
+    <EmbeddedResource Include="Client.resx">
+      <DependentUpon>Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClientBackground.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

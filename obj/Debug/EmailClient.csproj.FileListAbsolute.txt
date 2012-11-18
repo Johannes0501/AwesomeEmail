@@ -1,0 +1,10 @@
+C:\Email program\Final\EmailClient\EmailClient\bin\Debug\EmailClient.exe.config
+C:\Email program\Final\EmailClient\EmailClient\bin\Debug\EmailClient.exe
+C:\Email program\Final\EmailClient\EmailClient\bin\Debug\EmailClient.pdb
+C:\Email program\Final\EmailClient\EmailClient\obj\Debug\EmailClient.Client.resources
+C:\Email program\Final\EmailClient\EmailClient\obj\Debug\EmailClient.Login.resources
+C:\Email program\Final\EmailClient\EmailClient\obj\Debug\EmailClient.Properties.Resources.resources
+C:\Email program\Final\EmailClient\EmailClient\obj\Debug\EmailClient.csproj.GenerateResource.Cache
+C:\Email program\Final\EmailClient\EmailClient\obj\Debug\EmailClient.exe
+C:\Email program\Final\EmailClient\EmailClient\obj\Debug\EmailClient.pdb
+C:\Email program\Final\EmailClient\EmailClient\obj\Debug\EmailClient.csprojResolveAssemblyReference.cache
